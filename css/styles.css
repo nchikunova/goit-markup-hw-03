@@ -28,23 +28,21 @@ li a {
     text-decoration: none;
 }
 
-
  .container {
    
     box-sizing: border-box;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px solid teal; */
 } 
 
 /* Главное меню сайта */
 .main-menu {
     display: flex;
     justify-content: space-between;
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -65,10 +63,9 @@ li a {
 }
 
 .site-nav .item {
-    /* display: block; */
+    display: block;
     margin-right: 50px;
     margin-left: 0;
-    /* background-color: aquamarine; */
 }
 
 .site-nav .item:last-child {
@@ -87,9 +84,9 @@ li a {
     margin-left: 50px;
 }
     
-/* .auth-nav .item {
+.auth-nav .item {
     display: block;
-} */
+}
 
 /* Лого-марджины */
 
@@ -184,6 +181,7 @@ li a {
         color: var(--accent-color);
     }
 
+    /* Секция Герой */
 .hero {
     padding-top: 200px ;
     padding-bottom: 200px ;
@@ -274,13 +272,11 @@ li a {
     padding-top: 92px;
     padding-bottom: 94px;
 }
-
+/* Секция чем мы занимаемся */
 .we-in-images {
     display: flex;
     padding-bottom: 94px;
     padding-left: 0px;
-    margin-right: -15px;
-    margin-left: -15px;
 }
 .card {
     margin-right: 30px;
@@ -295,6 +291,7 @@ li a {
      margin-left: 0px;
  }
 
+/* Секция наша команда */
 .our-team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -310,8 +307,6 @@ li a {
 .members {
     display: flex;
     justify-content: space-between;
-    margin-left: -15px;
-    margin-right: -15px;
     padding-left: 0;
 }
 
@@ -335,7 +330,7 @@ li a {
     line-height: 1.19;
 }
 
-
+/* Подвал */
 footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -386,11 +381,12 @@ address {
 
 /* Portfolio-page */
 
+/* Скрытый заголовок */
 .hiden {
     display: none;
 
 }
-
+/* Разделы Портфолио (список фильтров-кнопок)*/
 .button-list {
     display: flex;
     justify-content: center;
@@ -430,18 +426,29 @@ address {
     line-height: 1.63;
 }    
 
+/* Убрала черную рамку с кнопок при нажатии */
+
+.buttons:active, 
+.buttons:focus {
+    outline: none;
+}
+
+.current-button:active,
+.current-button:focus {
+    outline: none;
+}
+
+/* Секция Портфолио */
 .portfolio {
     padding-top: 94px;
     padding-bottom: 95px;
 }
 
-
+/* Наши проекты*/
 .projects {
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-    margin-left: -15px;
-    margin-right: -15px;
 }
 
 .project-item {
@@ -459,19 +466,21 @@ address {
     margin-right: 0;
     }
     
-
     /* Чистим последние нижние 3 марджина */
 .project-item:last-child(-n+3) {
     margin-bottom: 0;
 }
 
 .description {
-    margin-top: 20px;    
+    margin-top: 20px;  
+    margin-bottom: 20px;  
     padding-left: 24px;
+    padding-right: 24px;
     justify-content: flex-start;}
    
 
 .project-title {
+    margin: 0;
     padding-bottom: 4px;
     color: var(--second-text-color);
     font-weight: 700;
@@ -481,6 +490,7 @@ address {
     }      
 
 .about-project {
+    margin: 0;
     padding-top: 0;
 
     color: var(--primary-text-color);
