@@ -279,7 +279,6 @@ li a {
 /* Секция чем мы занимаемся */
 .we-in-images {
     display: flex;
-    padding-bottom: 94px;
     padding-left: 0px;
 }
 .card {
@@ -306,9 +305,19 @@ li a {
 
 .our-team-title {
     margin-bottom: 50px;
+    margin-top: 0;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
 }
 
 .members {
+    margin: 0;
+    
     display: flex;
     justify-content: space-between;
     padding-left: 0;
@@ -350,7 +359,6 @@ footer {
     text-decoration: none;
 }
 .footer-logo {
-    /* margin-left: 215px; */
     margin-bottom: 20px;
     font-family: var(--accent-font);
     font-style: normal;
@@ -366,13 +374,26 @@ footer {
                 color: var(--accent-color);
             }
 address {
+    margin: 0;
     color: #ffffff;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.72;
 }
+
+.adr {
+   margin-bottom: 9px;
+   margin-top: 0;
+}
+
+.footer-contacts:last-child {
+    margin-bottom: 0;
+}
+
 .footer-contacts {
+    margin-bottom: 9px;
+    margin-top: 0px;
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-size: 14px;
