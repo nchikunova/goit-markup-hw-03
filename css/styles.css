@@ -459,8 +459,8 @@ address {
     line-height: 1.63;
    }
                
-.btn {
-    margin-right: 8px;
+.buttons {
+    
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 22px;
@@ -468,6 +468,7 @@ address {
 
     border-color: var(--second-color);
     border-radius: 4px;
+
     background:var(--second-color);
     color: var(--second-text-color);
     font-weight: 500;
@@ -475,16 +476,20 @@ address {
     line-height: 1.63;
 }    
 
-
+.btn {
+    margin-right: 8px;
+}
 .btn:last-child {
     margin-right: 0;
 }
 
 
+
+
 /* Убрала черную рамку с кнопок при нажатии */
 
-.btn:active, 
-.btn:focus {
+.buttons:active, 
+.buttons:focus {
     outline: none;
 }
 
