@@ -233,7 +233,7 @@ li a {
 
 .element {
     justify-content: space-between;
-    width: calc(100% - 90px)/4;
+    width: calc((100% - 90px) /4);
     margin-right: 30px;
     text-align: left;
 }
@@ -341,11 +341,11 @@ li a {
     margin-bottom: 30px;
 }
 
-.member:nth-last-child(-n+4) {
+.member:nth-last-child(-n + 4) {
     margin-bottom: 0;
 }
 
-.member:nth-last-child(4n) {
+.member:last-child {
     margin-right: 0;
 }
 
