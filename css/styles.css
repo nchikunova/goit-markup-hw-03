@@ -9,10 +9,11 @@
     --footer-background:#2F303A;
   }
 
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 body {
     background-color:var(--main-color);
@@ -242,6 +243,7 @@ li a {
 }
 
 .section-title {
+    margin-bottom: 10px;
     color: var(--second-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -332,13 +334,25 @@ li a {
 }
 
 .member {
+    
     background-color: #fff;
     width: calc((100% - 90px) /4);
     margin-right: 30px;
     margin-bottom: 30px;
 }
 
+.member:nth-last-child(-n+4) {
+    margin-bottom: 0;
+}
+
+.member:nth-last-child(4n) {
+    margin-right: 0;
+}
+
 .team-members {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     color: var(--second-text-color);
     font-weight: 500;
     font-size: 16px;
@@ -346,6 +360,7 @@ li a {
 }
 .team-p {
     margin-bottom: 30px;
+
     color: var(--primary-text-color);
     font-weight: 400;
     font-size: 16px;
@@ -444,7 +459,7 @@ address {
     line-height: 1.63;
    }
                
-.buttons {
+.btn {
     margin-right: 8px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -453,7 +468,6 @@ address {
 
     border-color: var(--second-color);
     border-radius: 4px;
-
     background:var(--second-color);
     color: var(--second-text-color);
     font-weight: 500;
@@ -461,10 +475,16 @@ address {
     line-height: 1.63;
 }    
 
+
+.btn:last-child {
+    margin-right: 0;
+}
+
+
 /* Убрала черную рамку с кнопок при нажатии */
 
-.buttons:active, 
-.buttons:focus {
+.btn:active, 
+.btn:focus {
     outline: none;
 }
 
